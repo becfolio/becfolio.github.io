@@ -1232,7 +1232,7 @@ padding: 20px;
     color: rgba(21, 21, 21, 0.6);
   }
   #masthead.site-header.standard #site-navigation .menu > li > a {
-    color: #151515;
+    color: #000000;
   }
   #masthead.site-header.standard.centered .container, #masthead.site-header.standard.centered .container-fluid {
     display: block;
@@ -1608,7 +1608,7 @@ Header General
 #masthead.site-header #site-branding a {
   display: inline-block;
   line-height: normal;
-  padding: 30px 0;
+  padding: 50px 0 40px 30px; /* top, right, bottom, left */
 }
 #masthead.site-header #ham-trigger-wrap {
   cursor: pointer;
@@ -1618,6 +1618,7 @@ Header General
   -webkit-transform: translateY(-3px);
   -ms-transform: translateY(-3px);
   transform: translateY(-3px);
+  padding-right: 58px; /* adjust as needed */
 }
 #masthead.site-header #ham-trigger-wrap .ham-trigger span {
   display: inline-block;
@@ -1744,7 +1745,7 @@ Header General
     display: block;
     padding: 15px 20px;
     text-transform: uppercase;
-    color: #fff;
+    color: #fff !important;
   }
   #masthead.site-header:not(.hamburger-side) #site-navigation .menu a:hover {
     color: rgba(225, 225, 225, 0.7);
@@ -1769,7 +1770,7 @@ Header General
 @media (max-width: 767px) {
   #masthead.site-header.standard, #masthead.site-header.hamburger-side {
     margin: 0 !important;
-    padding: 0  !important;
+     padding-left: 20px; 
   }
 
   #masthead.site-header #site-branding a {
