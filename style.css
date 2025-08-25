@@ -931,6 +931,9 @@ ol .children {
     float: none;
     width: 100%;
   }
+
+
+  
   .comment-form .comment-form-author, .comment-form .comment-form-email {
     margin-bottom: 30px;
   }
@@ -1110,6 +1113,7 @@ padding: 20px;
 #masthead.site-header.standard {
   position: absolute;
    transition: padding 0.3s ease;
+   
   
 
 }
@@ -1120,7 +1124,7 @@ padding: 20px;
   }
   #masthead.site-header.standard #site-branding a {
     padding-top: 10px;
-    padding-left: 35px !important; ;
+    padding-left: 35px !important; 
     font-size: 30px;
   }
   #masthead.site-header.standard #site-navigation .menu a {
@@ -1138,7 +1142,7 @@ padding: 20px;
     padding: 3px 12px;
   }
   #masthead.site-header.standard #site-navigation .menu > li:last-of-type {
-    padding-right: 35px;
+    padding-right: 20px;
   }
 
   
@@ -1698,8 +1702,8 @@ Header General
 .site-header.is-stuck {
   -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.08);
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.08);
-  padding: 0 !important;
-  margin: 0 !important;
+  padding: 25px 0; 
+  height: auto;
 }
 .site-header.is-stuck #site-branding a {
   padding: 10px  0 !important;
@@ -1788,6 +1792,7 @@ Header General
   }
   #masthead.site-header #site-branding .logo {
     display: none;
+    
   }
 }
 #masthead.site-header #site-branding .retina-logo {
