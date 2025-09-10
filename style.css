@@ -1150,7 +1150,7 @@ padding: 20px;
     padding: 3px 12px;
   }
   #masthead.site-header.standard #site-navigation .menu > li:last-of-type {
-    padding-right: 20px;
+    padding-right: 40px;
   }
 
   
@@ -1625,7 +1625,6 @@ Header General
 #masthead.site-header #site-branding a {
   display: inline-block;
   line-height: normal;
-  padding: 10px 0 40px 30px; /* top, right, bottom, left */
 }
 #masthead.site-header #ham-trigger-wrap {
   cursor: pointer;
