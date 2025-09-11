@@ -13,21 +13,20 @@ html, body {
     }
 }
 
-/* Container with no extra spacing and thicker middle fade */
+/* Container with no extra spacing */
 .container {
     width: 100%;
     max-width: 100%;
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0 auto;      /* centers container if smaller than screen */
+    padding: 0;          /* removes left and right padding */
+    box-sizing: border-box; /* include padding in width calculation */
+}
 
-    background: linear-gradient(
-        to bottom,
-        rgba(255, 255, 255, 0) 0%,       /* transparent at top */
-        rgba(255, 255, 255, 0.411) 30%,  /* start fading in */
-        rgba(255, 255, 255, 0.411) 70%,  /* maintain white band longer */
-        rgba(255, 255, 255, 0) 100%      /* fade out at bottom */
-    );
+/* Remove spacing from all children inside container */
+.container * {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
 }
 
 
@@ -1151,7 +1150,7 @@ padding: 20px;
     padding: 3px 12px;
   }
   #masthead.site-header.standard #site-navigation .menu > li:last-of-type {
-    padding-right: 40px;
+    padding-right: 20px;
   }
 
   
@@ -1626,6 +1625,7 @@ Header General
 #masthead.site-header #site-branding a {
   display: inline-block;
   line-height: normal;
+  padding: 10px 0 40px 30px; /* top, right, bottom, left */
 }
 #masthead.site-header #ham-trigger-wrap {
   cursor: pointer;
