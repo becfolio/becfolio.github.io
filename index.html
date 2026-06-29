@@ -4,6 +4,37 @@
         <!-- Document Title -->
         <title>Portfolio</title>
 
+        <script>
+    // Passsword
+document.addEventListener("DOMContentLoaded", function () {
+    const parts = ["Zm8=", "bGlvdQ==", "bmxvY2s="];
+    function decodeBase64(str) {
+        try { return atob(str); } catch(e) { return ""; }
+    }
+    const correctPassword = parts.map(decodeBase64).join("");
+    function getParam(name) {
+        const params = new URLSearchParams(window.location.search);
+        return params.get(name);
+    }
+    const authKey = "authenticated";
+    if (sessionStorage.getItem(authKey) === "true") return;
+    const urlKey = getParam("key");
+    if (urlKey && urlKey === correctPassword) {
+        sessionStorage.setItem(authKey, "true");
+        return;
+    }
+    const userPassword = prompt("This site is password protected. Please enter the password:");
+    if (userPassword === correctPassword) {
+        sessionStorage.setItem(authKey, "true");
+    } else {
+        document.body.innerHTML = "<h2 style='text-align:center;margin-top:50px;color:#c00;'>Incorrect password. Please reload to try again.</h2>";
+        sessionStorage.removeItem(authKey);
+    }
+});
+// Passsword End
+</script>
+
+
         <!-- Metas -->
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
